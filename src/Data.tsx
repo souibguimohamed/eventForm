@@ -97,19 +97,39 @@ function App() {
             );
     };
 
+    const downloadFile = () => {
+        window.open(
+            "https://scontent.esperoo.fr/eventForm/data.xlsx",
+            "_blank"
+        );
+    };
+
     if (openData) {
         return (
-            <div
-                style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: "10px",
-                    justifyContent: "center",
-                    alignItems: "left",
-                }}
-            >
-                <ShowData />
-            </div>
+            <>
+                <div
+                    style={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        gap: "10px",
+                        justifyContent: "center",
+                        alignItems: "left",
+                    }}
+                >
+                    <ShowData />
+                </div>
+                <button
+                    style={{
+                        width: "200px",
+                        backgroundColor: "#2980b9",
+                        color: "white",
+                        marginTop: "15px",
+                    }}
+                    onClick={downloadFile}
+                >
+                    Telecharger
+                </button>
+            </>
         );
     } else {
         return (
