@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Logo from "./assets/logo.svg";
 import "./App.css";
 import Input from "./Input";
 import Swal from "sweetalert2";
@@ -48,7 +47,7 @@ function App() {
             password === "€sperooS€cr€tPassword!"
         ) {
             setopenData(true);
-            localStorage.setItem("hasAccess", true);
+            localStorage.setItem("hasAccess", "true");
         }
     };
     const ShowData = () => {

@@ -3,8 +3,6 @@ import * as React from "react";
 
 import "./style.scss";
 
-import infoIcon from "../../../utils/img//icons/info.svg";
-
 export default function Input(props: InputProps) {
     const [toggleCaption, setToggleCaption] = React.useState(false);
     const {
